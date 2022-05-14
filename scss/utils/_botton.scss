@@ -1,0 +1,22 @@
+.button {
+  font-family: $secondFont;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+
+  color: #fcfdfe;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 144px;
+  height: 40px;
+  background: #ec5863;
+  border-radius: 5px;
+  // .button__blue
+  &__blue {
+    background: #4285f4;
+    // justify-content: end;
+  }
+}
