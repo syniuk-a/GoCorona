@@ -20,6 +20,7 @@
   }
   // .header__container
   &__container {
+    // position: relative;
     min-height: 114px;
     display: flex;
     align-items: center;
@@ -111,6 +112,7 @@
   }
   // .header__action
   &__action {
+    // position: relative;
     display: flex;
     justify-content: end;
     flex: 0 0 252px;
