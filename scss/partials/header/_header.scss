@@ -1,3 +1,102 @@
 .header {
-  background: #000;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  // .header__container
+  &__container {
+    min-height: 114px;
+    display: flex;
+    align-items: center;
+  }
+  // .header__logo
+  &__logo {
+    display: flex;
+    flex-direction: row-reverse;
+    // position: relative;
+    // z-index: 5;
+  }
+  // .header__logo-text
+  &__logo-text {
+    display: flex;
+    align-items: center;
+    // text-align: center;
+
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    &__pink {
+      color: #ec5863;
+    }
+  }
+  // .header__logo-img
+  &__logo-img {
+    // display: flex;
+  }
+  // .header__menu
+  &__menu {
+    flex: 1 1 auto;
+  }
+  // .header__menu-nav
+  &__menu-nav {
+  }
+  // .header__menu-list
+  &__menu-list {
+    display: flex;
+    justify-content: end;
+  }
+  &__menu-item {
+    margin-right: 40px;
+    // &:last-child {
+    //   margin-right: 0px;
+    // }
+  }
+  // .header__menu-link
+  &__menu-link {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+    &:hover {
+      text-decoration: underline;
+      color: #ec5863;
+    }
+  }
+  // .header__action
+  &__action {
+    display: flex;
+    justify-content: end;
+    flex: 0 0 252px;
+  }
+}
+.button {
+  font-family: $secondFont;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+
+  color: #fcfdfe;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 144px;
+  height: 40px;
+  background: #ec5863;
+  border-radius: 5px;
+  // .button__blue
+  &__blue {
+    background: #4285f4;
+    // justify-content: end;
+  }
+}
+.icon-menu {
+}
+.close-icon-menu {
 }
