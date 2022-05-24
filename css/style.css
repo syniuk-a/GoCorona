@@ -42,7 +42,6 @@ body {
 }
 
 body {
-  font-family: Montserrat;
   font-size: 12px;
   color: #616161;
 }
@@ -790,36 +789,83 @@ body {
   max-width: 668px;
   text-align: center;
 }
+@media (max-width: 767.98px) {
+  .content-healthcare {
+    max-width: 590px;
+  }
+}
 
 .cards__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767.98px) {
+  .cards__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .cards__item {
-  margin: 0px 72px 0px 0px;
+  font-family: Rubik;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 279px;
+  max-height: 274px;
   padding: 37px 18px;
+  margin: 0px 72px 0px 0px;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
           box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
   border-radius: 8px;
 }
 .cards__item:last-child {
-  margin: 0px 0px 0px 0px;
+  margin-bottom: 0px;
 }
-.cards__icon {
-  display: block;
-  margin: 0 auto;
+@media (max-width: 991.98px) {
+  .cards__item {
+    margin: 0px 36px 0px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .cards__item {
+    margin: 24px 0px;
+  }
 }
 .cards__title {
-  font-family: Rubik;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1/39;
+  line-height: 1.39;
   text-align: center;
   letter-spacing: 0.08em;
   margin: 58px 0px 4px 0px;
   color: #000000;
+}
+@media (max-width: 991.98px) {
+  .cards__title {
+    margin: 26px 0px 4px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .cards__title {
+    margin: 13px 2px;
+  }
 }
 .cards__subtitle {
   font-family: Rubik;
