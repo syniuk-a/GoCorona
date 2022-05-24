@@ -1,3 +1,25 @@
 .footer {
-  background-color: darkgreen;
+  background-color: #ffffff;
+  padding: 37px 0;
+}
+.foter {
+  // .foter__img-list
+  &__img-list {
+    margin: 0 auto;
+    @media (min-width: 987.98px) {
+      display: flex;
+      justify-content: center;
+    }
+    // display: flex;
+  }
+  // .foter__img-item
+  &__img-item {
+    margin: 0px 65px 0px 0px;
+    &:last-child {
+      margin: 0px;
+    }
+  }
+  // .foter__image
+  &__image {
+  }
 }

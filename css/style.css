@@ -272,9 +272,29 @@ body {
 }
 
 .footer {
-  background-color: darkgreen;
+  background-color: #ffffff;
+  padding: 37px 0;
 }
 
+.foter__img-list {
+  margin: 0 auto;
+}
+@media (min-width: 987.98px) {
+  .foter__img-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.foter__img-item {
+  margin: 0px 65px 0px 0px;
+}
+.foter__img-item:last-child {
+  margin: 0px;
+}
 .close-icon-menu,
 .icon-menu {
   display: none;
@@ -754,4 +774,59 @@ body {
   letter-spacing: 0.37em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.healthcare {
+  padding: 79px 0px 0px 0px;
+}
+.healthcare__content {
+  margin: 0 auto;
+}
+.healthcare__cards-body {
+  padding: 46px 0px 39px 0px;
+}
+
+.content-healthcare {
+  max-width: 668px;
+  text-align: center;
+}
+
+.cards__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.cards__item {
+  margin: 0px 72px 0px 0px;
+  padding: 37px 18px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+          box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+}
+.cards__item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.cards__icon {
+  display: block;
+  margin: 0 auto;
+}
+.cards__title {
+  font-family: Rubik;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1/39;
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin: 58px 0px 4px 0px;
+  color: #000000;
+}
+.cards__subtitle {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #616161;
 }/*# sourceMappingURL=style.css.map */

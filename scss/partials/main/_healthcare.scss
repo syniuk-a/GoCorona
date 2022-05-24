@@ -1,0 +1,93 @@
+.healthcare {
+  padding: 79px 0px 0px 0px;
+  // .healthcare__container
+  &__container {
+  }
+  // .healthcare__content
+  &__content {
+    margin: 0 auto;
+  }
+  // .healthcare__cards-body
+  &__cards-body {
+    padding: 46px 0px 39px 0px;
+  }
+}
+.content-healthcare {
+  max-width: 668px;
+  text-align: center;
+}
+.text {
+  // .text__block-title
+  &__block-title {
+  }
+  // .text__clock-subtitle
+  &__clock-subtitle {
+  }
+}
+.content-text {
+  // .content-text__pink
+  &__pink {
+  }
+}
+.cards {
+  // .cards__list
+  &__list {
+    display: flex;
+  }
+  // .cards__item
+  &__item {
+    margin: 0px 72px 0px 0px;
+    padding: 37px 18px;
+    background: #ffffff;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius: 8px;
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+  // .cards__icon
+  &__icon {
+    display: block;
+    // display: block;
+    // align-items: center;
+    // margin: 0px 0px 58px 0px;
+    margin: 0 auto;
+  }
+  // .cards__title
+  &__title {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1/39;
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin: 58px 0px 4px 0px;
+
+    color: #000000;
+  }
+  // .cards__subtitle
+  &__subtitle {
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: #616161;
+  }
+}
+.card {
+  // .card__decoration-1
+  &__decoration-1 {
+  }
+  // .card__decoration-2
+  &__decoration-2 {
+  }
+  // .card__decoration-3
+  &__decoration-3 {
+  }
+  // .card__decoration-4
+  &__decoration-4 {
+  }
+}
