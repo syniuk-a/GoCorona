@@ -429,6 +429,11 @@ body {
     padding: 13px 0px 0px 22px;
   }
 }
+@media (max-width: 767.98px) {
+  .family__container {
+    padding: 0px;
+  }
+}
 .family__container::before {
   content: "";
   position: absolute;
@@ -440,6 +445,16 @@ body {
           transform: translate(100%, 0px);
   border-radius: 30px 0px 0px 30px;
   background-color: #ec5863;
+}
+@media (max-width: 991.98px) {
+  .family__container::before {
+    right: 200px;
+  }
+}
+@media (max-width: 767.98px) {
+  .family__container::before {
+    display: none;
+  }
 }
 .family__content {
   z-index: 5;
@@ -481,10 +496,11 @@ body {
       -ms-flex: 0 1 52%;
           flex: 0 1 52%;
 }
+
 @media (max-width: 767.98px) {
-  .family__content-img__img-icon {
-    width: 75%;
-    height: 75%;
+  .family__img-icon {
+    width: 85%;
+    height: 85%;
   }
 }
 
@@ -573,6 +589,16 @@ body {
 .stay {
   padding: 80px 0;
 }
+@media (max-width: 991.98px) {
+  .stay {
+    padding: 40px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .stay {
+    padding: 20px 0px;
+  }
+}
 .stay__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,6 +606,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 767.98px) {
+  .stay__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 .stay__media {
   -webkit-box-flex: 0;
@@ -590,6 +624,11 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50.5%;
           flex: 0 1 50.5%;
+}
+@media (max-width: 767.98px) {
+  .stay__content {
+    margin: 0px 0px 40px 0px;
+  }
 }
 
 .media__app-img-body img {
@@ -662,16 +701,42 @@ body {
   background: rgb(250, 251, 253);
   padding: 60px 0px 116px 0px;
 }
+@media (max-width: 991.98px) {
+  .experts {
+    padding: 60px 0px 86px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .experts {
+    padding: 60px 0px 46px 0px;
+  }
+}
 .experts__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 991.98px) {
+  .experts__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .experts__content {
   max-width: 400px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
+}
+@media (max-width: 991.98px) {
+  .experts__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 0 auto;
+  }
 }
 .experts__video {
   -webkit-box-flex: 0;
@@ -683,6 +748,11 @@ body {
           box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
   border-radius: 8px;
   overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .experts__video {
+    margin: 30px 0px 0px 0px;
+  }
 }
 .experts__video iframe {
   position: absolute;
@@ -738,13 +808,19 @@ body {
 }
 
 .body-statistics-experts {
-  padding: 25px 80px;
+  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 991.98px) {
+  .body-statistics-experts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .body-statistics-experts__item {
   -webkit-box-flex: 0;
@@ -756,6 +832,22 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+}
+@media (max-width: 767.98px) {
+  .body-statistics-experts__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 420px) {
+  .body-statistics-experts__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin: 0 auto;
+  }
 }
 .body-statistics-experts__value {
   font-family: Rubik;
@@ -780,19 +872,10 @@ body {
 }
 .healthcare__content {
   margin: 0 auto;
+  max-width: 400px;
 }
 .healthcare__cards-body {
   padding: 46px 0px 39px 0px;
-}
-
-.content-healthcare {
-  max-width: 668px;
-  text-align: center;
-}
-@media (max-width: 767.98px) {
-  .content-healthcare {
-    max-width: 590px;
-  }
 }
 
 .cards__list {
@@ -835,9 +918,6 @@ body {
           box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
   border-radius: 8px;
 }
-.cards__item:last-child {
-  margin-bottom: 0px;
-}
 @media (max-width: 991.98px) {
   .cards__item {
     margin: 0px 36px 0px 0px;
@@ -870,7 +950,6 @@ body {
 .cards__subtitle {
   font-family: Rubik;
   font-weight: 400;
-  font-size: 12px;
   line-height: 1.39;
   text-align: center;
   letter-spacing: 0.08em;
