@@ -1,18 +1,92 @@
 .healthcare {
-  padding: 79px 0px 0px 0px;
   // .healthcare__container
   &__container {
   }
   // .healthcare__content
   &__content {
-    margin: 0 auto;
     max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 0;
   }
-  // .healthcare__cards-body
-  &__cards-body {
-    padding: 46px 0px 39px 0px;
+  // .healthcare__items
+  &__items {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+  }
+  // .healthcare__column
+  &__column {
+    position: relative;
+    z-index: 5;
+    margin: 0px 72px 0px 0px;
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    // .healthcare__column_1
+    &_1 {
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        background: #ec5863;
+      }
+      &::after {
+        width: 97px;
+        height: 97px;
+        right: -51px;
+        top: 37px;
+        border-radius: 30px;
+        transform: rotate(105deg);
+      }
+      &::before {
+        width: 66px;
+        height: 66px;
+        left: -20px;
+        bottom: -29px;
+        border-radius: 16px;
+        transform: rotate(-30deg);
+      }
+    }
+    // .healthcare__column_2
+    &_2 {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 127px;
+        height: 127px;
+        right: -76px;
+        bottom: -19px;
+        border-radius: 30px;
+        transform: rotate(-30deg);
+        background: #ec5863;
+      }
+    }
+    // .healthcare__column_3
+    &_3 {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 66px;
+        height: 66px;
+        right: -23px;
+        top: -33px;
+        border-radius: 16px;
+        transform: rotate(-30deg);
+        background: #ec5863;
+      }
+    }
+  }
+  // .healthcare__item
+  &__item {
+    position: relative;
+    z-index: 5;
+    // margin: 0px 72px 0px 0px;
   }
 }
+// .healthcare__column:last-child {
+//   margin: 0px 5px 0px 0px;
+// }
 .content-healthcare {
 }
 .text {
@@ -28,81 +102,42 @@
   &__pink {
   }
 }
-.cards {
-  // .cards__list
-  &__list {
-    display: flex;
-    align-items: center;
-    @media (max-width: 767.98px) {
-      flex-direction: column;
-    }
-  }
-  // .cards__item
-  &__item {
-    font-family: $mainFont;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 279px;
-    max-height: 274px;
-    padding: 37px 18px;
-    margin: 0px 72px 0px 0px;
-    background: #ffffff;
-    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
-    border-radius: 8px;
-    // &:not(:last-child) {
-    //   margin: 0px 72px 0px 0px;
-    // }
-    @media (max-width: 991.98px) {
-      margin: 0px 36px 0px 0px;
-    }
-    @media (max-width: 767.98px) {
-      margin: 24px 0px;
-    }
-  }
-  // .cards__icon
+.item-healthcare {
+  max-width: 278px;
+  padding: 37px 18px;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  text-align: center;
+
+  // .item-healthcare__icon
   &__icon {
+    margin: 0px 0px 58px 0px;
+    @media (max-width: 767.98px) {
+      margin: 0px 0px 26px 0px;
+    }
   }
-  // .cards__title
+  // .item-healthcare__title
   &__title {
+    font-family: $mainFont;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.39;
-    text-align: center;
     letter-spacing: 0.08em;
-    margin: 58px 0px 4px 0px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    margin: 0px 0px 4px 0px;
 
     color: #000000;
-    @media (max-width: 991.98px) {
-      margin: 26px 0px 4px 0px;
-    }
-    @media (max-width: 767.98px) {
-      margin: 13px 2px;
-    }
   }
-  // .cards__subtitle
-  &__subtitle {
+  // .item-healthcare__text
+  &__text {
     font-family: $mainFont;
     font-weight: 400;
+    font-size: 12px;
     line-height: 1.39;
-    text-align: center;
     letter-spacing: 0.08em;
+    font-feature-settings: "pnum" on, "lnum" on;
 
     color: #616161;
-  }
-}
-.card {
-  // .card__decoration-1
-  &__decoration-1 {
-  }
-  // .card__decoration-2
-  &__decoration-2 {
-  }
-  // .card__decoration-3
-  &__decoration-3 {
-  }
-  // .card__decoration-4
-  &__decoration-4 {
   }
 }
