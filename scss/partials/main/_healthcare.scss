@@ -8,10 +8,6 @@
   @media (max-width: 479.98px) {
     padding: 25px 5px 20px 5px;
   }
-
-  // .healthcare__container
-  &__container {
-  }
   // .healthcare__content
   &__content {
     max-width: 700px;
@@ -117,24 +113,6 @@
     position: relative;
     z-index: 5;
     // margin: 0px 72px 0px 0px;
-  }
-}
-// .healthcare__column:last-child {
-//   margin: 0px 5px 0px 0px;
-// }
-.content-healthcare {
-}
-.text {
-  // .text__block-title
-  &__block-title {
-  }
-  // .text__clock-subtitle
-  &__clock-subtitle {
-  }
-}
-.content-text {
-  // .content-text__pink
-  &__pink {
   }
 }
 .item-healthcare {
